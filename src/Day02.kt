@@ -3,8 +3,6 @@ import kotlin.math.max
 fun main() {
     fun part1(input: List<String>): Int {
         val colorToLimit = mapOf("red" to 12, "green" to 13, "blue" to 14)
-
-
         return input.map {
             val gameAndColors = it.split(": ")
             gameAndColors[0].split(" ")[1].toInt() to gameAndColors[1]

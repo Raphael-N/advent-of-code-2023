@@ -7,7 +7,7 @@ fun main() {
         return input.sumOf { "${it.first { char -> char.isDigit() }}${it.last { char -> char.isDigit() }}".toInt() }
     }
 
-    val possibleValues = setOf("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9")
+    val possibleValues = setOf("one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "1", "2", "3", "4", "5", "6", "7", "8", "9")
     fun part2(input: List<String>): Int {
         return input.sumOf {
             val firstDigit: String = it.findAnyOf(possibleValues)?.second!!.writtenToDigit()
